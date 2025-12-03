@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shayan Khan – Cybersecurity Portfolio</title>
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #e5e5e5;
+    --accent: #00ff9d;
+    --card-bg: #111;
+    --border: #1f1f1f;
+    --mono: "Consolas", monospace;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+  }
+  header {
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 20px var(--accent);
+    object-fit: cover;
+  }
+  header h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: var(--accent);
+  }
+  header p {
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  .section h2 {
+    margin-bottom: 15px;
+    color: var(--accent);
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+  }
+  .card {
+    background: var(--card-bg);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(0,255,157,0.15);
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill {
+    padding: 8px 14px;
+    background: #0f0f0f;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    opacity: 0.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  /* Typing effect */
+  .typing {
+    width: 22ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--accent);
+    margin: 0 auto;
+  }
+  @keyframes typing { from { width: 0; } }
+  @keyframes blink { 50% { border-color: transparent; } }
+  /* Typing effect */
+  .typing {
+    width: 22ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--accent);
+    margin: 0 auto;
+  }
+  @keyframes typing { from { width: 0; } }
+  @keyframes blink { 50% { border-color: transparent; } }
+
+  /* Smooth fade-up animation */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+  }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Glow hover on cards */
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 25px rgba(0,255,157,0.22);
+    transform: translateY(-4px);
+  }
+
+  /* Social icons */
+  .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .icon {
+    font-size: 22px;
+    transition: 0.3s;
+  }
+  .icon:hover {
+    color: var(--accent);
+    transform: scale(1.2);
+  }
+
+  /* Light/Dark Mode Toggle */
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--mono);
+  }
+
+  /* Terminal section */
+  .terminal-box {
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    font-family: var(--mono);
+    color: var(--accent);
+  }
+  .terminal-line { margin: 8px 0; }
+</style>
+</head>
+<body>
+<header>
+  <img src="profile.jpg" alt="Profile Photo" />
+  <h1>Shayan Khan</h1>
+  <p>Ethical Hacker • Penetration Tester • Python Developer • OSINT Specialist</p>
+</header>
+
+<div class="container">
+  <div class="section">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am <strong>Shayan Khan</strong>, a cybersecurity specialist with expertise in penetration testing, network security, Python automation, and OSINT investigations. I work with Kali Linux, exploit development, and secure infrastructure designing.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Penetration Testing</div>
+      <div class="skill">Networking</div>
+      <div class="skill">Python</div>
+      <div class="skill">Kali Linux</div>
+      <div class="skill">OSINT</div>
+      <div class="skill">Reconnaissance</div>
+      <div class="skill">Automation</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Network Scanner</h3>
+      <p>A Python-based multi-threaded scanner for ports, services, and vulnerabilities.</p>
+    </div>
+    <div class="card">
+      <h3>OSINT Toolkit</h3>
+      <p>Custom tools for information gathering using APIs and web scraping.</p>
+    </div>
+    <div class="card">
+      <h3>Web Pentesting Scripts</h3>
+      <p>Automated scripts for SQLi, XSS detection, and directory enumeration.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:khanshayyan223@gmail.com">khanshayyan223@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/shayan-khan20356">github.com/shayan-khan20356</a></p>
+      <p>LinkedIn: <a href="#">Shayan Khan</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 Shayan Khan — Cybersecurity Portfolio
+</footer>
+<script>
+// Light/Dark Mode Toggle
+const btn = document.createElement('button');
+btn.className = 'toggle-btn';
+btn.innerText = 'Toggle Theme';
+document.body.appendChild(btn);
+
+btn.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+});
+
+// Terminal Animation
+const terminal = document.querySelector('.terminal-box');
+if (terminal) {
+  const lines = [
+    '> Initializing system...',
+    '> Loading modules...',
+    '> Checking vulnerabilities...',
+    '> Environment secure.',
+    '> Welcome Shayan.'
+  ];
+
+  let index = 0;
+  function showLine() {
+    if (index < lines.length) {
+      const line = document.createElement('div');
+      line.className = 'terminal-line';
+      line.textContent = lines[index];
+      terminal.appendChild(line);
+      index++;
+      setTimeout(showLine, 600);
+    }
+  }
+  showLine();
+}
+
+// Fade-up Scroll Animation
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animated');
+    }
+  });
+});
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
